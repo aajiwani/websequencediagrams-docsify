@@ -13,24 +13,10 @@ script:
   - yarn example &
   - sleep 25
   - yarn ci_tests
-# after_success:
-  # - export CI_BUILD_NUMBER="$TRAVIS_BUILD_NUMBER"
-  # - export CI_PULL_REQUEST="$TRAVIS_PULL_REQUEST"
-  # - export CI_BRANCH="$TRAVIS_BRANCH"
-  # - yarn coveralls
-  # - test $TRAVIS_EVENT_TYPE != "cron" && yarn generate-docs
-# deploy:
-#   - provider: pages
-#     cleanup: false
-#     token: "$GITHUB_TOKEN"
-#     keep_history: true
-#     local_dir: docs
-#     on:
-#       branch: not-master
-#       condition: $TRAVIS_EVENT_TYPE != cron
-#   - provider: script
-#     script: npx semantic-release
-#     cleanup: false
-#     on:
-#       branch: not-master
-#       condition: $TRAVIS_EVENT_TYPE != cron
+deploy:
+  - provider: script
+    script: npx semantic-release
+    cleanup: false
+    on:
+      branch: master
+      condition: $TRAVIS_EVENT_TYPE != cron
