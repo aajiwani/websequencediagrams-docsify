@@ -1,0 +1,6 @@
+src/
+.travis.yml
+yarn.lock
+yarn-error.log
+example/
+cypress/
