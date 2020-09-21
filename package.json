@@ -1,0 +1,32 @@
+{
+  "name": "websequencediagrams-docsify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aajiwani/websequencediagrams-docsify.git",
+  "author": "Amir Ali Jiwani <amirali.jiwani89@gmail.com>",
+  "license": "MIT",
+  "description": "A plugin to render websequence diagrams in docsify",
+  "browser": "src/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js --out-file docsify-mermaid.js --no-minify",
+    "example": "npm run build && docsify serve example/ --open",
+    "test": "echo 'No test to run'"
+  },
+  "keywords": [
+    "docsify",
+    "websequence",
+    "diagram"
+  ],
+  "bugs": {
+    "url": "https://github.com/aajiwani/websequencediagrams-docsify/issues"
+  },
+  "files": [
+    "README.md",
+    "src/",
+    "dist/"
+  ],
+  "homepage": "https://github.com/aajiwani/websequencediagrams-docsify#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
