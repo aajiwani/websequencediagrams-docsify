@@ -12,6 +12,7 @@ install:
   - yarn
   - yarn build
   - yarn park-build-artifact
+  - npx cypress install
 script:
   - yarn example &
   - sleep 25
