@@ -20,7 +20,7 @@ script:
 deploy:
   - provider: script
     script: npx semantic-release
-    cleanup: false
+    skip_cleanup: true
     on:
       branch: master
       condition: $TRAVIS_EVENT_TYPE != cron
