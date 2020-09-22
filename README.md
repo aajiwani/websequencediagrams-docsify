@@ -13,6 +13,55 @@ note right of Bob: Bob thinks about it
 Bob->Alice: Authentication Response
 \`\`\`
 
+## Integration in Docsify
+
+There could be many ways of doing it, but the easiest would be something of this nature:
+
+- Install Docsify appropriately and make sure you can run `docsify serve your_dir`
+
+- Under `index.html` of your docsify installation, add this bit to enable this plugin
+
+```html
+<script src="https://unpkg.com/websequencediagrams-docsify@1.0.2/dist/docsify-websequencediagrams.js"></script>
+```
+
+- Your end result would look something like this:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head> ... </head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: ''
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/websequencediagrams-docsify@1.0.2/dist/docsify-websequencediagrams.js"></script>
+  ...
+</body>
+</html>
+```
+
+- You are now ready to consume websequence diagrams
+
+- Add a `markdown` file within your docsify space stated below, and feel the magic!
+
+<pre>
+```websequencediagrams
+
+title Foo-Bar!
+
+Alice->Bob: Authentication Request
+note right of Bob: Bob thinks about it
+Bob->Alice: Authentication Response
+
+```
+</pre>
+
 ## Ways of running
 
 Make sure you have `node` appropriately installed and either `npm` or `yarn` is available to you.
