@@ -1,16 +1,17 @@
 {
   "name": "websequencediagrams-docsify",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/docsify-websequencediagrams.js",
   "repository": "git@github.com:aajiwani/websequencediagrams-docsify.git",
   "author": "Amir Ali Jiwani <amirali.jiwani89@gmail.com>",
   "license": "MIT",
   "description": "A plugin to render websequence diagrams in docsify",
-  "browser": "src/index.js",
   "scripts": {
-    "build": "parcel build src/index.js --out-file docsify-mermaid.js --no-minify",
-    "example": "npm run build && docsify serve example/ --open",
-    "test": "echo 'No test to run'"
+    "build": "npx parcel build src/index.js --out-file docsify-websequencediagrams.js --no-minify --no-source-maps",
+    "park-build-artifact": "cp -R dist ./example",
+    "ci_tests": "npx cypress run --headless -b chrome",
+    "local_tests": "npx cypress open",
+    "example": "npm run build && npm run park-build-artifact && docsify serve example"
   },
   "keywords": [
     "docsify",
@@ -27,6 +28,12 @@
   ],
   "homepage": "https://github.com/aajiwani/websequencediagrams-docsify#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/npm": "^7.0.6",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "cypress": "^5.2.0",
+    "docsify-cli": "^4.4.1",
+    "parcel-bundler": "^1.12.4",
+    "semantic-release": "^17.1.2"
   }
 }

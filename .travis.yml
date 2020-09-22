@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - 12
+os: linux
+before_install:
+  - export PATH=$HOME/.yarn/bin:$PATH
+cache:
+  yarn: true
+  directories:
+    - $HOME/.cache/Cypress
+install:
+  - yarn
+  - yarn build
+  - yarn park-build-artifact
+  - npx cypress install
+script:
+  - yarn example &
+  - sleep 25
+  - yarn ci_tests
+deploy:
+  - provider: script
+    script: npx semantic-release
+    cleanup: false
+    on:
+      branch: master
+      condition: $TRAVIS_EVENT_TYPE != cron
