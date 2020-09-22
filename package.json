@@ -8,7 +8,7 @@
   "description": "A plugin to render websequence diagrams in docsify",
   "scripts": {
     "build": "npx parcel build src/index.js --out-file docsify-websequencediagrams.js --no-minify --no-source-maps",
-    "park-build-artifact": "cp -R dist ./example/dist",
+    "park-build-artifact": "cp -R dist ./example",
     "ci_tests": "npx cypress run --headless -b chrome",
     "local_tests": "npx cypress open",
     "example": "npm run build && npm run park-build-artifact && docsify serve example"
