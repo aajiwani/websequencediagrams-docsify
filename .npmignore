@@ -6,3 +6,4 @@ cypress/
 src/
 src/
 cypress.json
+.cache/
