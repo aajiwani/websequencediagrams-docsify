@@ -21,11 +21,6 @@
   "bugs": {
     "url": "https://github.com/aajiwani/websequencediagrams-docsify/issues"
   },
-  "files": [
-    "README.md",
-    "src/",
-    "dist/"
-  ],
   "homepage": "https://github.com/aajiwani/websequencediagrams-docsify#readme",
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^8.0.1",
