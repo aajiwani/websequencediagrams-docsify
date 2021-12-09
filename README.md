@@ -4,7 +4,7 @@ A plugin to render web sequence diagrams -- Just like that!
 
 It would be as simple as writing this in your markdown, and applying the javascript to it. Docsify does the rest!
 
-\`\`\`websequence
+\`\`\`websequencediagrams
 
 title Foo-Bar!
 
