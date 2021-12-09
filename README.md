@@ -19,6 +19,8 @@ This is how the output looks and feel like
 
 ![](assets/plugin_screenshot.png)
 
+`Take a look at the live project` present [here](https://aajiwani.github.io/websequencediagrams-docsify)
+
 ---
 
 ## Integration in Docsify
