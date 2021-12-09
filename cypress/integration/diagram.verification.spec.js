@@ -7,8 +7,7 @@ describe('Diagrams appearance', () => {
         // Check if diagram section is text or an image
         // It should contain a diagram rather text in it
         cy.get('div[class="wsd"]').then(els => {
-            // Ensure that wsd div should have 1 child,
-            // As that child would be generated image
+            // Ensure that wsd element exist only for once, as there is only 1 diagram in the example page
             expect(els.length).to.be.equal(1);
 
             // Ensure that image has a source of WebSequenceDiagrams

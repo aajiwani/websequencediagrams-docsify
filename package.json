@@ -2,12 +2,13 @@
   "name": "websequencediagrams-docsify",
   "version": "1.0.0",
   "main": "dist/docsify-websequencediagrams.js",
+  "source": "src/index.js",
   "repository": "git@github.com:aajiwani/websequencediagrams-docsify.git",
   "author": "Amir Ali Jiwani <amirali.jiwani89@gmail.com>",
   "license": "MIT",
   "description": "A plugin to render websequence diagrams in docsify",
   "scripts": {
-    "build": "npx parcel build src/index.js --out-file docsify-websequencediagrams.js --no-minify --no-source-maps",
+    "build": "npx parcel build --no-source-maps",
     "park-build-artifact": "cp -R dist ./example",
     "ci_tests": "npx cypress run --headless -b chrome",
     "local_tests": "npx cypress open",
@@ -28,7 +29,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "cypress": "^5.2.0",
     "docsify-cli": "^4.4.1",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.1",
     "semantic-release": "^17.1.2"
   }
 }
