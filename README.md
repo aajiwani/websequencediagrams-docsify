@@ -4,14 +4,18 @@ A plugin to render web sequence diagrams -- Just like that!
 
 It would be as simple as writing this in your markdown, and applying the javascript to it. Docsify does the rest!
 
-\`\`\`websequencediagrams
+<div style="background-color:rgba(54, 207, 197, 0.0970588); text-align:left; vertical-align: middle; padding:40px 0; margin:70px">
+```websequencediagrams
 
 title Foo-Bar!
 
 Alice->Bob: Authentication Request
 note right of Bob: Bob thinks about it
 Bob->Alice: Authentication Response
-\`\`\`
+``\`
+
+</div>
+
 
 ## Integration in Docsify
 
