@@ -16,6 +16,13 @@ Bob->Alice: Authentication Response
 
 </div>
 
+## Impression
+
+This is how the output looks and feel like
+
+![](assets/plugin_screenshot.png)
+
+---
 
 ## Integration in Docsify
 
