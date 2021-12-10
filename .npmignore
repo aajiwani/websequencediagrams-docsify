@@ -4,6 +4,9 @@ yarn-error.log
 example/
 cypress/
 src/
-src/
 cypress.json
 .cache/
+docs/
+.parcel-cache/
+README.md
+LICENSE
