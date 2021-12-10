@@ -10,7 +10,6 @@ cache:
     - $HOME/.cache/Cypress
 install:
   - yarn
-  - npx parcel -V
   - yarn build
   - yarn park-build-artifact
   - npx cypress install
