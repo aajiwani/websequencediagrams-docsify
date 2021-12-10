@@ -1,3 +1,4 @@
+[![Build Status](https://app.travis-ci.com/aajiwani/websequencediagrams-docsify.svg?branch=master)](https://app.travis-ci.com/aajiwani/websequencediagrams-docsify)
 # websequencediagrams-docsify
 
 A plugin to render web sequence diagrams -- Just like that!
@@ -32,7 +33,7 @@ There could be many ways of doing it, but the easiest would be something of this
 - Under `index.html` of your docsify installation, add this bit to enable this plugin
 
 ```html
-<script src="https://unpkg.com/websequencediagrams-docsify@1.0.2/dist/docsify-websequencediagrams.js"></script>
+<script src="//unpkg.com/websequencediagrams-docsify@2.0.1/dist/docsify-websequencediagrams.js"></script>
 ```
 
 - Your end result would look something like this:
@@ -50,7 +51,7 @@ There could be many ways of doing it, but the easiest would be something of this
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="https://unpkg.com/websequencediagrams-docsify@1.0.2/dist/docsify-websequencediagrams.js"></script>
+  <script src="//unpkg.com/websequencediagrams-docsify@2.0.1/dist/docsify-websequencediagrams.js"></script>
   ...
 </body>
 </html>
